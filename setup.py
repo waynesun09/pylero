@@ -14,9 +14,8 @@ for scheme in list(INSTALL_SCHEMES.values()):
     scheme['data'] = '%s/%s/etc' % (scheme['purelib'], PACKAGE_NAME)
 
 install_requires_ = [
-    'suds-py3',
+    'suds',
     'click',
-    'pre-commit',
 ]
 
 if __name__ == "__main__":
