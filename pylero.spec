@@ -18,6 +18,7 @@ SOURCE: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python3-devel
 BuildRequires: python3-suds
+BuildRequires: python3-click
 
 %global _description %{expand:
 # Pylero
