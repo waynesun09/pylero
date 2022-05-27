@@ -12,7 +12,7 @@ Group: Development/Libraries
 Prefix: %{_prefix}
 Vendor: pylero Developers <gsun@redhat.com>
 
-URL: https://github.com/RedHatQE/pylero
+URL: https://github.com/waynesun09/pylero
 SOURCE: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildArch: noarch
