@@ -2,6 +2,7 @@
 %define version 0.0.2
 %define unmangled_version 0.0.2
 %define release 1
+%define _unpackaged_files_terminate_build 0
 
 Summary: Python SDK for Polarion
 Name: %{name}
