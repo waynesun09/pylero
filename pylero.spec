@@ -17,6 +17,7 @@ SOURCE: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildArch: noarch
 BuildRequires: python3-devel
+BuildRequires: pyproject-rpm-macros
 BuildRequires: python3-suds
 BuildRequires: python3-click
 
@@ -58,9 +59,6 @@ Summary:        %{summary}
 
 %prep
 %autosetup -p1 -n %{name}-%{version}
-
-%generate_buildrequires
-%pyproject_buildrequires -t
 
 %build
 %pyproject_wheel
