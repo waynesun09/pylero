@@ -60,6 +60,10 @@ Summary:        %{summary}
 %prep
 %autosetup -p1 -n %{name}-%{version}
 
+%generate_buildrequires
+# Don't use %%pyproject_buildrequires -t to avoid the unavailable tox test
+%pyproject_buildrequires
+
 %build
 %pyproject_wheel
 
