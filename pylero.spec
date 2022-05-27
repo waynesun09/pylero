@@ -17,7 +17,6 @@ URL: https://github.com/waynesun09/pylero
 SOURCE: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildArch: noarch
-BuildRequires: pyproject-rpm-macros
 BuildRequires: python3-devel
 BuildRequires: python3-suds
 BuildRequires: python3-click
@@ -62,7 +61,6 @@ Summary:        %{summary}
 %autosetup -p1 -n %{name}-%{version}
 
 %generate_buildrequires
-# Don't use %%pyproject_buildrequires -t to avoid the unavailable tox test
 %pyproject_buildrequires
 
 %build
