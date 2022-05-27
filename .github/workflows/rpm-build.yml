@@ -24,7 +24,7 @@ jobs:
           python -m
           build
           --sdist
-          --outdir ./
+          --outdir /github/home/rpmbuild/SOURCES/
       - name: build RPM package
         id: rpm
         uses: naveenrajm7/rpmbuild@master
