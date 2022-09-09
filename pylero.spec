@@ -4,7 +4,7 @@ Version: 0.0.3
 Release: 1%{?dist}
 License: MIT
 
-URL: https://github.com/RedHatQE/pylero
+URL: https://github.com/waynesun09/pylero
 Source0: %{url}/archive/%{version}/pylero-%{version}.tar.gz
 
 Requires: python3-%{name} == %{version}-%{release}
