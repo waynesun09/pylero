@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        Python SDK for Polarion
 
 License:        MIT
-URL:            https://github.com/RedHatQE/pylero
+URL:            https://github.com/waynesun09/pylero
 Source:         %{url}/archive/%{version}/pylero-%{version}.tar.gz
 
 BuildArch:      noarch
