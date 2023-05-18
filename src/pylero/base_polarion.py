@@ -688,9 +688,13 @@ class BasePolarion(object):
                 self._suds_object.customFields = self.custom_array_obj()
             cf = self._suds_object.customFields[0]
             custom_fld = None
+            match = None
             if cf:
                 # check if the custom field already exists and modify it.
-                match = [x for x in cf if x.key == csm["field_name"]]
+                if isinstance(csm, dict):
+                    match = [x for x in cf if x.key == csm["field_name"]]
+                elif isinstance(csm, basestring):
+                    match = [x for x in cf if x.key == csm]
                 if match:
                     custom_fld = match[0]
             if not custom_fld and self.uri:
